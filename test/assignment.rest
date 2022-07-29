@@ -1,0 +1,48 @@
+GET http://localhost:4000/submit HTTP/1.1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYzM1NjllMDcwMzg3N2ZkOTNmNGRhYSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjU3MTUwMzE4LCJleHAiOjE2NTcxNTEyMTh9._Tk7mfoH3Ce78aTNc9quO3YSUa-R86oH8QJQ3ehVYBI
+
+###
+GET http://localhost:4000/submit/62c61968aea9c83943b69646 HTTP/1.1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYzM1NjllMDcwMzg3N2ZkOTNmNGRhYSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjU3MTUwMzE4LCJleHAiOjE2NTcxNTEyMTh9._Tk7mfoH3Ce78aTNc9quO3YSUa-R86oH8QJQ3ehVYBI
+
+###
+GET http://localhost:4000/assignment HTTP/1.1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYzM1NjllMDcwMzg3N2ZkOTNmNGRhYSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjU3MTUwMzE4LCJleHAiOjE2NTcxNTEyMTh9._Tk7mfoH3Ce78aTNc9quO3YSUa-R86oH8QJQ3ehVYBI
+
+###
+GET http://localhost:4000/assignment/62c61863aea9c83943b69642 HTTP/1.1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYzM1NjllMDcwMzg3N2ZkOTNmNGRhYSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjU3MTUwMzE4LCJleHAiOjE2NTcxNTEyMTh9._Tk7mfoH3Ce78aTNc9quO3YSUa-R86oH8QJQ3ehVYBI
+
+
+### 
+POST http://localhost:4000/assignment HTTP/1.1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYzM1NjllMDcwMzg3N2ZkOTNmNGRhYSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjU3MTUwMzE4LCJleHAiOjE2NTcxNTEyMTh9._Tk7mfoH3Ce78aTNc9quO3YSUa-R86oH8QJQ3ehVYBI
+
+{
+    "title" : "first test",
+    "description": "this is first test description",
+    "point": 5,
+    "createdBy": "62c3569e0703877fd93f4daa",
+    "expiresAt": "2022-07-07 1:00 AM",
+    "submission": "the first assignment is here"
+}
+
+####
+
+POST http://localhost:4000/submit HTTP/1.1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYzM1NjllMDcwMzg3N2ZkOTNmNGRhYSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjU3MTUwMzE4LCJleHAiOjE2NTcxNTEyMTh9._Tk7mfoH3Ce78aTNc9quO3YSUa-R86oH8QJQ3ehVYBI
+
+
+{
+    "assignmentId": "62c618c2aea9c83943b69644",
+    "userId": "62c3569e0703877fd93f4daa",
+    "title": "Assignment one",
+    "submission": "this is my submission"
+
+}
